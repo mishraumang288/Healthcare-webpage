@@ -186,7 +186,18 @@ p {
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
-
+#header .hamburger .bar::after {
+	top: 8px;
+}
+#header .hamburger .bar::before {
+	bottom: 8px;
+}
+#header .hamburger.active .bar::before {
+	bottom: 0;
+}
+#header .hamburger.active .bar::after {
+	top: 0;
+}
 
 #hero {
 	background-image: url(./img/iot2.png);
